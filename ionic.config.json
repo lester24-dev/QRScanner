@@ -1,0 +1,16 @@
+{
+  "name": "QrScanner",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {},
+    "proxies": [
+      {
+        "path": "/localhost",
+        "proxyUrl": "http://localhost:26309"
+      }
+    ]
+  },
+  "type": "angular"
+}

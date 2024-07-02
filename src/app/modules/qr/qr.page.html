@@ -1,0 +1,28 @@
+
+
+<ion-content [fullscreen]="true">
+
+  
+  <div id="overlay" [ngStyle]="{'display' : overlayDisplay}"></div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" #keriFab>
+    <ion-fab-button (click)="fabToggle()" class="fab-button main-fab">
+      <ion-icon name="flash-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+
+      <ion-fab-button class="fab-button">
+        <ion-icon name="exit" (click)="goTo()"></ion-icon>  
+      </ion-fab-button>
+
+
+      <!-- <ion-fab-button class="fab-button">
+        <img src="assets/images/padala.png" class="fab-image" (click)="goTo('/service/padala')">
+      </ion-fab-button> -->
+    </ion-fab-list>
+  </ion-fab>
+
+  <img src="assets/images/qr.png" alt="" srcset="" class="img">
+ 
+  <ion-button class="login-button" expand="block" (click)="scan()">Barcode Scan</ion-button>
+</ion-content>
